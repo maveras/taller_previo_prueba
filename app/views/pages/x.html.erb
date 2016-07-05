@@ -1,2 +1,21 @@
-<h1>Pages#x</h1>
-<p>Find me in app/views/pages/x.html.erb</p>
+<h1>Formulario de Contacto</h1>
+<p>Ingresa tus datos</p>
+
+
+<%= form_tag({:controller => "pages", :action => "x"}, :method => "post") do %>
+   <%= label_tag "nombre", "Ingresa tu nombre" %>
+   <br>
+   <%= text_field_tag "nombre", "", :size => 20, :maxlenght => 5, :placeholder => "Nombre", :required => "required" %>
+   <br>
+   <%= label_tag "email", "Ingresa tu Email" %>
+   <br>
+   <%= text_field_tag "email", "", :size => 20, :maxlenght => 5, :placeholder => "Email", :required => "required" %>
+   <br/>
+   <%= label_tag "edad", "Ingresa tu Edad" %>
+   <br>
+   <%= text_field_tag "edad", "", :size => 20, :maxlenght => 5, :placeholder => "Edad", :required => "required" %>
+   <br>
+   <br/>
+   <%= submit_tag "Enviar" %>
+<% end %>
+
