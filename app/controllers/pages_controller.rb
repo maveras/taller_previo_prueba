@@ -7,4 +7,9 @@ class PagesController < ApplicationController
   	user = Persona.create(nombre: @nombre, email: @email, edad: @edad)
 
   end
+
+  def landing
+  	render layout: 'layout2'
+  	
+  end
 end

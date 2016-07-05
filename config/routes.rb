@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   post 'pages/x'
   get  'pages/x'
 
+  get 'pages/landing'
   root 'pages#x'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
